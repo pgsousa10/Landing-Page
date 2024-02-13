@@ -1,0 +1,350 @@
+/* 
+    Desktop: 1440px
+    Mobile: 375px
+    font-family: 'Alata', sans-serif;
+    font-family: 'Josefin Slab', serif; 
+*/
+
+:root{
+    --Branco: hsl(0, 0%, 100%);
+    --Preto: hsl(0, 0%, 0%);
+    --Cinza-escuro: hsl(0, 0%, 55%);
+    --Cinza-muito-escuro: hsl(0, 0%, 41%);
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li, a{
+   list-style: none;
+   text-decoration: none;
+   color: inherit;
+}
+
+ul{
+    display: flex;
+}
+
+body{
+    font-family: 'Alata', sans-serif;
+}
+ 
+#hero-img{
+    background-image: url(../imagens/desktop/image-hero.jpg);
+    width: 100%;
+    min-height: 100vh;
+    position: absolute;
+    filter: brightness(50%);
+}
+
+#hamburger-mobile,
+.menu-mobile{
+    display: none;
+}
+
+header{
+    color: var(--Branco);       
+}
+
+header nav{
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 4rem 10rem;
+}
+
+nav ul{
+    gap: 1rem;
+}
+
+ul li {
+    position: relative;
+}
+
+ul li:before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    background-color: var(--Branco);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transition: all 0.4s ease-in-out 0s;
+    transition: all 0.4s ease-in-out 0s;
+}
+  
+ul li:hover:before{
+    visibility: visible;
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+}
+  
+header h1{
+    position: relative;
+    border: 2px solid var(--Branco);
+    width: 650px;
+    margin-top: 4rem;
+    margin-left: 10rem;
+    text-transform: uppercase;
+    font-size: 4rem;
+    padding: 3rem;
+    font-family: 'Josefin Slab', serif;
+    font-weight: 300;
+}
+
+main{
+    padding: 4rem 10rem;
+}
+
+.first-section #img-mobile{
+    display: none;
+}
+
+.first-section{
+    display: flex;
+    align-items: center;
+    min-height: 100vh;   
+}
+
+.section-full{
+    position: relative;
+}
+
+.img-section img{
+    width: 100%;
+    height: 400px;
+}
+
+.descricao-vr {
+    position: absolute;
+    bottom: 0;
+    width: 80%;
+    background-color: var(--Branco);
+    right: 0;
+    left: 78%;
+    padding: 5rem 0rem 0rem 5rem;
+}
+
+.descricao-vr h1{
+    font-family: 'Josefin Slab', serif;
+    font-weight: 700;
+    font-size: 2rem;
+    text-transform: uppercase;
+}
+
+.descricao-vr p{
+    font-size: 1rem;
+    font-weight: 400;
+    color: var(--Cinza-muito-escuro);
+    margin-top: 1rem;
+    text-align: justify;
+}
+
+.criacoes-mobile{
+    display: none;
+}
+
+.criacoes-header{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 2rem;
+    padding-bottom: 2rem;
+}
+
+.criacoes-header h1{
+    text-transform: uppercase;
+    letter-spacing: .2rem;
+    font-weight: 400;
+    font-size: 2rem;
+} 
+
+.criacoes-header button{
+    padding: .5rem 2rem;
+    text-transform: uppercase;
+    border: 2px solid var(--Preto);
+    background-color: var(--Branco);
+    font-weight: 700;
+    cursor: pointer;
+}
+
+.criacoes-header button:hover{
+    background-color: var(--Preto);
+    color: var(--Branco);
+}
+
+section#criacoes .criacoes-items .item-1{
+    background-image: url(../imagens/desktop/image-deep-earth.jpg);
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 400px;
+    filter: brightness(80%);
+}
+
+section#criacoes .criacoes-items .item-2{
+    background-image: url(../imagens/desktop/image-night-arcade.jpg);
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 400px;
+    filter: brightness(80%);
+}
+
+section#criacoes .criacoes-items .item-3{
+    background-image: url(../imagens/desktop/image-soccer-team.jpg);
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 400px;
+    filter: brightness(80%);
+}
+
+section#criacoes .criacoes-items .item-4{
+    background-image: url(../imagens/desktop/image-grid.jpg);
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 400px;
+    filter: brightness(80%);
+}
+
+section#criacoes .criacoes-items .item-5{
+    background-image: url(../imagens/desktop/image-from-above.jpg);
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 400px;
+    filter: brightness(80%);
+}
+
+section#criacoes .criacoes-items .item-6{
+    background-image: url(../imagens/desktop/image-pocket-borealis.jpg);
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 400px;
+    filter: brightness(80%);
+}
+
+section#criacoes .criacoes-items .item-7{
+    background-image: url(../imagens/desktop/image-curiosity.jpg);
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 400px;
+    filter: brightness(80%);
+}
+
+section#criacoes .criacoes-items .item-8{
+    background-image: url(../imagens/desktop/image-fisheye.jpg);
+    background-repeat: no-repeat;
+    width: 250px;
+    height: 400px;
+    filter: brightness(80%);
+}
+
+.criacoes-linha-1,
+.criacoes-linha-2{
+    gap: 1.5rem;
+    display: flex;
+}
+
+.criacoes-linha-2{
+    padding-top: 2rem;
+}
+
+.criacoes-items{
+    min-height: 100vh;
+    width: 100%;
+    cursor: pointer;
+    margin-bottom: 4rem;
+}
+
+.item{
+    padding: 2rem;
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-end;
+    box-shadow: 1px 0px 0px 1px var(--Cinza-muito-escuro);
+    color: var(--Branco);
+}
+
+.item span{
+    color: var(--Branco);
+    font-family: 'Josefin Slab', serif;
+    font-size: 1.6rem;
+    font-weight: 900;
+    text-transform: uppercase;
+}
+
+.item:hover{
+    transform: scale(1.05);
+    opacity: 0.9;
+}
+
+footer{
+    background-color: var(--Preto);
+    color: var(--Cinza-muito-escuro);
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 10rem;    
+}
+
+.rodape{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    color: var(--Cinza-muito-escuro);
+}
+
+.rodape-redes-sociais{
+    display: flex;
+    gap: 1rem;
+}
+
+.rodape-redes-sociais a,
+.criador a{
+    position: relative;
+    display: inline-block;
+}
+
+.rodape-redes-sociais a::before,
+.criador a::before{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 2px;
+    bottom: -5px;
+    background-color: var(--Branco);
+    transform: scaleX(0);
+    transition: all 0.4s ease-in-out;
+}
+
+.rodape-redes-sociais a:hover::before,
+.criador a:hover::before{
+    transform: scaleX(1);
+}
+
+
+.menu-rodape-creditos{
+    display: flex;
+    justify-content: space-between;
+    padding-top: 1rem;
+    font-size: .8rem;
+}
+
+.menu-rodape{
+    display: flex;
+    justify-content: space-between;
+}
+
+.menu-rodape-creditos ul{
+    display: flex;
+    gap: 1rem;
+}
+
+.criador{
+    padding-top: 1rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: .8rem;
+}

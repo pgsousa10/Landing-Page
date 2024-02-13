@@ -1,0 +1,284 @@
+@media only screen and (max-width: 450px){
+        
+    #hero-img{
+        background-image: url(../imagens/mobile/image-hero.jpg);
+        height: 700px;
+        filter: none;
+    }
+
+    header nav{
+        padding: 1rem .7rem;
+    }
+
+    main{
+        padding: 0rem .7rem;
+    }
+    
+    .nav-menu{
+        display: none;
+    }
+
+    #hamburger-mobile,
+    .menu-mobile
+    {
+        display: flex;
+    }
+
+    .menu-mobile{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100vw;
+    }
+
+    ul,
+    #logo-desktop,
+    #close-mobile{ 
+        display: none;
+        cursor: pointer;
+    }
+
+    header h1{
+        font-size: 2.5rem;
+        width: 90vw;
+        margin-left: .7rem;
+        margin-top: 9rem;
+        padding: 1rem 1rem 1rem 1rem;
+    }
+
+    .first-section #img-desktop{
+        display: none;
+    }
+
+    .first-section #img-mobile{
+        display: block;
+    }
+
+    .section-full{
+        position: relative;
+        top: 400px;
+    } 
+
+    .img-section #img-mobile{
+        width: 90vw;
+        height: 250px;
+    }
+
+    .descricao-vr{
+        position: relative;
+        width: 70vw;
+        padding: 0rem;
+        margin-top: 2rem;
+        text-align: center;
+        left: 50%;
+        transform: translateX(-50%);
+    }
+
+    .descricao-vr h1{
+        font-size: 1.8rem;
+    }
+
+    .descricao-vr p{
+        font-size: 1rem;
+        text-align: center;
+    }
+
+    section#criacoes .criacoes-items .item-1{
+        background-image: url(../imagens/mobile/image-deep-earth.jpg);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 150px;
+        background-size: cover;
+        filter: brightness(80%);
+    }
+    
+    section#criacoes .criacoes-items .item-2{
+        background-image: url(../imagens/mobile/image-night-arcade.jpg);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 150px;
+        background-size: cover;
+        filter: brightness(80%);
+    }
+    
+    section#criacoes .criacoes-items .item-3{
+        background-image: url(../imagens/mobile/image-soccer-team.jpg);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 150px;
+        background-size: cover;
+        filter: brightness(80%);
+    }
+    
+    section#criacoes .criacoes-items .item-4{
+        background-image: url(../imagens/mobile/image-grid.jpg);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 150px;
+        background-size: cover;
+        filter: brightness(80%);
+    }
+    
+    section#criacoes .criacoes-items .item-5{
+        background-image: url(../imagens/mobile/image-from-above.jpg);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 150px;
+        background-size: cover;
+        filter: brightness(80%);
+    }
+    
+    section#criacoes .criacoes-items .item-6{
+        background-image: url(../imagens/mobile/image-pocket-borealis.jpg);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 150px;
+        background-position: center center;
+        background-size: cover;
+        filter: brightness(80%);
+    }
+    
+    section#criacoes .criacoes-items .item-7{
+        background-image: url(../imagens/mobile/image-curiosity.jpg);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 150px;
+        background-position: right center;
+        background-size: cover;
+        filter: brightness(80%);
+    }
+    
+    section#criacoes .criacoes-items .item-8{
+        background-image: url(../imagens/mobile/image-fisheye.jpg);
+        background-repeat: no-repeat;
+        width: 100%;
+        height: 150px;
+        background-position: right center;
+        background-size: cover;
+        filter: brightness(80%);
+    }
+
+    .criacoes-linha-1,
+    .criacoes-linha-2{
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    section#criacoes{
+        position: relative;
+        padding-top: 450px;
+    }
+    
+    section#criacoes .criacoes-header{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    section#criacoes .criacoes-items{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .criacoes-header h1{
+        text-align: center;
+        letter-spacing: 0;
+        font-size: 1.8rem;
+    }
+
+    section#criacoes .criacoes-items .item span{
+        font-size: 1.3rem; 
+    }
+    
+    section#criacoes button{
+        position: absolute;
+        bottom: -4%;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 150px;
+        height: 40px;
+    }
+
+    footer{
+        padding: 1rem .7rem;
+        margin-top: 10rem;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .rodape{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .menu-rodape{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+        justify-content: space-between;
+    }
+    
+    .rodape-redes-sociais{
+        display: flex;
+        align-items: center;
+    }
+    
+    .menu-rodape-creditos{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 1rem;
+    }
+    
+    .menu-rodape-creditos ul{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }    
+
+    .criador{
+        font-size: .5rem;
+    }
+
+    .menu-mobile.aberto{
+        background-color: var(--Preto);
+        width: 100vw;
+        height: 100vh;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        z-index: 999;
+    }
+  
+    .menu-mobile.aberto .logo-mobile{
+        position: absolute;
+        top: 1rem;
+        left: 1rem;
+    }      
+
+    .menu-mobile.aberto #close-mobile{
+        position: absolute;
+        top: 1.5rem;
+        right: 1rem;
+    }
+
+    .menu-mobile.aberto ul{
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        left: 1rem;
+        gap: 1rem;
+    }
+
+    .menu-mobile.aberto ul li{
+        font-size: 2rem;
+        text-transform: uppercase;
+        font-family: 'Josefin Slab', serif;
+    }
+}
